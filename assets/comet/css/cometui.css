@@ -64,6 +64,12 @@ disp_dtm {
    color: black;
 }
 
+disp_dtm1 {
+  font-family: Determination;
+  font-size: 50px;
+  color: black;
+}
+
 disp_dtm-alt {
   font-family: Determination;
   font-size: 15px;
@@ -138,4 +144,43 @@ p.sc {
 /* *insert random stuff here* */
 .bg-ambatukam {
   background-color: #ffffff !important;
+}
+
+/* Tree view*/
+ul, #myUL {
+  list-style-type: none;
+}
+
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
 }
